@@ -5,46 +5,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Passion+One:wght@400;700;900&display=swap');
 
 header{
-    margin: -10px;
-    padding: 10px;
-    max-height: 150px;
-    text-align: center;
     background-color: black;
     color: white;
-    
+    margin: -25px -10px -20px -10px;
+    padding: 20px;
+    text-align: center;
 }
 
-h1{
-    font-size: 4em;
+header > h1{
     font-family: 'passion one';
-    margin-bottom: -10px;
+    margin-bottom: -20px;
+    font-size: 4em;
 }
 
-p.header{
+header > p a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 1px;
-    
-}
-
-a{
-    font-weight: bold;
-    font-size: verdana;
+    font-size: 1.2em;
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
 }
 
-p{
-    padding: 25px;
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: bold;
+a:hover{
+    text-decoration: underline;
 }
 
-div{
-    font-family: 'comic relief', sans-serif;
-}
+/**/
 
-div.imagens{
-
-
+main{ 
+    max-width: 100%;
+    margin: auto;
+    font-family: 'Comic Relif';
 }
