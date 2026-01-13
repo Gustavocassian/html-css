@@ -6,11 +6,20 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="caastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sx" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sx" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+            <!--RADIO TEM Q TER O MESMO NOME, SÓ PODE ESCOLHER UMA DAS OPÇÕES-->
+        </fieldset>
         <fieldset>
             <legend>Esportes favoritos</legend>
-            <input type="checkbox" name="esfut" id="iesfut"> Futebol
-        </fieldset>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="escor" id="iescor"> <label for="iescor">Corrida</label> <br>
+            <input type="checkbox" name="esvo" id="iesvo"> <label for="iesvo">vôlei</label> <br>
+        </fieldset> 
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
