@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+/*Typical devices breakpoints*/
+
+/*  Typical Device Breakpoints
+ -------------------------------
+
+    celular: de 600px até 768px
+    tablet: de 768 até 992
+    desktop: de 992px até 1200px
+    Grandes telas: acima de 1200px
+*/
+@media print {
+    body {
+        background: url(../imagens/back-print.jpg); /*Desnecessário*/ 
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        font-size: 25px;
+        content: 'Essa Impressão foi feita através do site do Gustavo Cassiano';
+        text-decoration: underline;
+        line-height: 10px;
+        margin: none;
+        padding: 5px;
+    }
+     
+    main h1 {
+
+        font-family: 'Courier New', Courier, monospace;
+        text-wrap: none;
+        color: black;
+    }
+
+        img#phone {display: none;}
+        img#tablet{display: none;}
+        img#print{display: block;}
+        img#PC{display: none;}
+        img#TV{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: url(../imagens/back-tablet.jpg);
+    }
+
+        img#phone {display: none;}
+        img#tablet{display: block;}
+        img#print{display: none;}
+        img#PC{display: none;}
+        img#TV{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: url(../imagens/back-pc.jpg);
+    }
+
+        img#phone {display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#PC{display: block;}
+        img#TV{display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+        img#phone {display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#PC{display: none;}
+        img#TV{display: block;}
+}
+    
