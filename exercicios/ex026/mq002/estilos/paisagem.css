@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
-/*Config geral*/
+/*aparelho deitado*/
+
+body {
+    background-image: url(../imagensmq2/cev-landscape.jpg);
+    background-position: left bottom;
+}

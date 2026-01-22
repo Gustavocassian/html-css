@@ -1,3 +1,24 @@
 @charset "UTF-8";
 
-/*aparelho deitado*/
+/*Config geral*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 0px #233dff69;
+    padding: 10px;
+}
