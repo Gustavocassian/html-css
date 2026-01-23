@@ -20,6 +20,25 @@ header > h1 {
     text-align: center;
 }
 
+#burguer {
+    font-size: 2em;
+    color: white;
+    display: block;
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    color: black;
+    background-color: white;
+}
+
+nav {
+    display: none;
+}
+
 nav > ul {
     list-style-type: none;
 }
