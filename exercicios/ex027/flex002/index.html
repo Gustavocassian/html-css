@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+
+        /*Flex direction
+        
+        - Padrão: row = da esquerda para direita
+        - row-reverse = da direita pra esquerda
+        - column = em pé de cima para baixo
+        - column-reverse em pé de baixo para cima
+
+
+         Eixos(axis)
+        
+        - padrão: croos-axis: (CRIA O CROSS START E CROSS END) de cima para baixo
+
+        - padrão: main-axis: (CRIA O MAIN START E O MAIN END) = da esquerda para direita
+
+
+        row reverse: inverte o main-axis
+
+        column: main-axis de cima para baixo, cross axis da esquerda para direita
+
+        column-reeverse: main-axis de baixo para cima 
+        */
+        div.conteiner {
+            display: flex;
+            flex-direction: column-reverse;
+
+            background-color: cadetblue;
+        }
+
+        div.item {
+
+            padding: 10px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+        <div class="item">g</div>
+        <div class="item">h</div>
+    </div>
+</body>
+</html>
