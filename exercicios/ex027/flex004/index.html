@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+
+        /*Flex direction
+        
+        - Padrão: row = da esquerda para direita
+        - row-reverse = da direita pra esquerda
+        - column = em pé de cima para baixo
+        - column-reverse em pé de baixo para cima
+
+
+         Eixos(axis)
+        
+        - padrão: croos-axis: (CRIA O CROSS START E CROSS END) de cima para baixo
+
+        - padrão: main-axis: (CRIA O MAIN START E O MAIN END) = da esquerda para direita
+
+
+        row reverse: inverte o main-axis
+
+        column: main-axis de cima para baixo, cross axis da esquerda para direita
+
+        column-reeverse: main-axis de baixo para cima 
+        */
+
+        /*
+        no-rap = não quebra
+
+        wrap = quebra no sentido do cross-axis
+
+        wrap-reverse = quebra no sentido contrario ao cross-axis
+        ----------------------------------------------
+        Justify-content: alinhamento em relação ao main-axis
+
+                flex-start: começa no main-start, espaço em branco fica no final.
+
+                flex-end: começa no main-end, espaço em  branco no main start
+
+                center: todo os itens no centro
+                --------------------------------
+
+                space-between: primeiro inte, main-start e ultimo no main-end e outros espaçados igualmente
+
+                space-evenly: espaçamento igual inclusive antes e depois do ultimo item
+                
+                space-around: cria dois espaços entre os itens
+        -------------------------------------------------
+
+        aling-itens: Alinhamento em relação ao cross-axis
+
+                stretch > padrão: estica as divs
+
+                flex-start: começa no cross-start, espaço em branco fica no final.
+
+                flex-end: começa no cross-end, espaço em  branco no main start
+
+                center: todo os itens no centro do cross-axis
+        */
+        div.conteiner {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+
+            /*flex-flow = flex direction + flex-wrap*/
+
+            height: 300px;
+            background-color: rgb(95, 121, 160);
+        }
+
+        div.item {
+            
+            
+            padding: 10px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
