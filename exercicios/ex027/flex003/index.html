@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+
+        /*Flex direction
+        
+        - Padrão: row = da esquerda para direita
+        - row-reverse = da direita pra esquerda
+        - column = em pé de cima para baixo
+        - column-reverse em pé de baixo para cima
+
+
+         Eixos(axis)
+        
+        - padrão: croos-axis: (CRIA O CROSS START E CROSS END) de cima para baixo
+
+        - padrão: main-axis: (CRIA O MAIN START E O MAIN END) = da esquerda para direita
+
+
+        row reverse: inverte o main-axis
+
+        column: main-axis de cima para baixo, cross axis da esquerda para direita
+
+        column-reeverse: main-axis de baixo para cima 
+        */
+
+        /*
+        no-rap = não quebra
+
+        wrap = quebra no sentido do cross-axis
+
+        wrap-reverse = quebra no sentido contrario ao cross-axis
+
+
+        */
+        div.conteiner {
+            display: flex;
+            flex-flow: row wrap;
+            
+            /*flex-flow = flex direction + flex-wrap*/
+
+            
+            background-color: rgb(95, 121, 160);
+        }
+
+        div.item {
+            flex: auto;
+            
+            width: 200px;
+            margin: 5px;
+            padding: 10px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">exemplo de bloco a</div>
+        <div class="item">exemplo de bloco b</div>
+        <div class="item">exemplo de bloco c</div>
+        <div class="item">exemplo de bloco d</div>
+        <div class="item">exemplo de bloco e</div>
+        <div class="item">exemplo de bloco f</div>
+        <div class="item">exemplo de bloco g</div>
+    </div>
+</body>
+</html>
