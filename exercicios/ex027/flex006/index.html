@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            aling-content: alinha os elementos no cross-axis quando empacotado com o wrap
+
+                padrão > stretch: dividir em partes iguais
+
+                flex-start: alinha ao começo do cross-axis
+
+                flex-end: alinha no final do cross-axis
+
+                center: centralizzado ao centro do cross-axis
+
+                space-between: espaço entre os itens, ptimeiros intens grudados no cross start e end 
+
+                space evely: spara em partes iguais e dpois centraliza dps
+        */
+
+        div.conteiner {
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+
+            height: 400px;
+            background-color: cadetblue;
+        }
+
+        div.item {
+            
+
+            
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">G</div>
+        <div class="item">G</div>
+        <div class="item">G</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
